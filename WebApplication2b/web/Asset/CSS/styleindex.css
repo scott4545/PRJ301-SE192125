@@ -1,0 +1,153 @@
+/* Reset mặc định để đảm bảo giao diện nhất quán */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng toàn bộ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Định dạng form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Định dạng các nhãn (label) */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Định dạng các input (text, password, hidden) */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Định dạng checkbox thành hình tròn */
+input[type="checkbox"] {
+    appearance: none; /* Loại bỏ kiểu mặc định của checkbox */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #007bff;
+    border-radius: 50%; /* Tạo hình tròn */
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hiệu ứng khi checkbox được chọn */
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+/* Tạo dấu tích trong checkbox khi được chọn */
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Định dạng riêng cho checkbox Male (nếu muốn giữ hình vuông) */
+input[type="checkbox"][name="male"] {
+    border-radius: 4px; /* Giữ hình vuông cho Male */
+}
+
+input[type="checkbox"][name="male"]:checked::after {
+    content: '✔'; /* Dấu tích vuông */
+    color: #fff;
+    font-size: 10px;
+    background-color: transparent;
+}
+
+/* Định dạng select (combo box) */
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Định dạng textarea */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Định dạng các nút */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Màu sắc cho các nút */
+input[type="submit"] {
+    background-color: #28a745;
+}
+
+input[type="submit"][value="Register"] {
+    background-color: #007bff;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+}
+
+input[type="button"] {
+    background-color: #6c757d;
+}
+
+/* Hiệu ứng hover cho nút */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+/* Định dạng khoảng cách giữa các phần tử */
+form > * {
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho các nhãn và checkbox */
+form > label,
+form > input[type="checkbox"] {
+    margin-bottom: 5px;
+}

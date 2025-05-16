@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>HTML Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Asset/CSS/styleindex.css">
+    </head>
+    
+    <body>
+        <form method="post">
+            Textbox: <input type="text" value="txt"/><br/>
+            Password: <input type="password" value="txtPassword"/> <br/>
+            Hidden<input type="hidden" name="txthidden" value="" /> <br/>
+            Male <input type="checkbox" id="male" name="male" value="gender"/>  <br/>
+            Status <input type="checkbox" id="Single" name="status" value="Single" /> 
+            <label for="Single">Single</label><br/>
+            <input type="checkbox" id="Married" name="status" value="Married" /> 
+            <label for="Married">Married</label><br/>
+            <input type="checkbox" id="Divorced" name="status" value="Divorced" /> 
+            <label for="Single">Divorced</label><br/>
+            <label for="comboBox" >ComboBox</label>
+            <select id="comboBox" name="combobox">
+                <option value="Serviet">JSP and Serviet</option>
+                <option value="EJB">EJB</option> 
+                
+            </select><br/>
+            Multiple <select name="Multiple" name="Multiple">
+                <option value="Serviet">JSP and Serviet</option>
+                <option value="EJB">EJB</option> 
+                <option value="Java">Core Jave</option>
+            </select><br/>
+            TextArea <textarea name="txtArea">
+                This is form parameters demo!!!
+            </textarea><br/>
+            <input type="submit" name="action"/>
+            <input type="submit" value="Register" name="action"/>
+            <input type="reset" name="action"/>
+            <input type="button" value="JavaScript" name="action"/>
+            
+        </form>
+    </body>
+</html>
